@@ -1,0 +1,13 @@
+.container-menu{
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	justify-content: space-between;
+	&--select{
+		select{
+			border: 0;
+			outline: none;
+		}
+	}
+
+}

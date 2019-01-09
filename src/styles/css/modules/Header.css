@@ -1,0 +1,10 @@
+.container-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between; }
+  .container-menu--select select {
+    border: 0;
+    outline: none; }
+
+/*# sourceMappingURL=Header.css.map */

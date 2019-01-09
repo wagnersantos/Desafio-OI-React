@@ -62,4 +62,13 @@ img {
     .container {
       max-width: 73.125rem; } }
 
+.container-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between; }
+  .container-menu--select select {
+    border: 0;
+    outline: none; }
+
 /*# sourceMappingURL=index.css.map */
