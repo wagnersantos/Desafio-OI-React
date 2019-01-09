@@ -1,10 +1,118 @@
 import React, { Component } from 'react';
+import Slider from "react-slick";
 
 
 class Cards extends Component {
   render() {
+    const settings = {
+      dots: true,
+      arrows: false,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
     return (
-     	<div className="container-main--cards">   
+     	<div className="cards">
+        <Slider {...settings}>
+          <div className='cards__item'>
+            <div className='cards__wrapper'>
+              <div className='cards__block'>
+                <div className='cards__header'>
+                  <p className='cards__title'>Plano 8</p>
+                  <p className='cards__internet'>8GB</p>
+                </div>
+                <div className='cards__apps-list'>
+                  <p className=''>Apps com internet ilimitada:</p>
+                  <div className='cards__apps-list__container'>
+                  </div>
+                </div>
+                <div className='cards__video-list'>
+                  <p className=''>Conteúdo digital em video:</p>
+                  <div className='cards__video-list__container'>
+                  </div>
+                </div>
+                <div className='cards-dependents'>
+                  <p className=''>Adicione depentendes:</p>
+                  <p className=''>Por mais R$ 8,00 cada</p>
+                </div>              
+              </div> 
+              <div className='cards__block-price'>
+                <div className='cards__block-price__value'>
+                  <span className='cards__block-price__prefix'>R$</span>
+                  <span className='cards__block-price__integer'>80</span>
+                  <span className='cards__block-price__sufix'>
+                    <span className='cards__block-price__cents'>,90</span>
+                    <span className='cards__block-price__periodicity'>/mês</span>
+                  </span>
+                </div>
+                <div className='cards__block-price__button'></div>
+              </div> 
+            </div> 
+          </div>
+          <div className='cards__item'>
+            <div className='cards__wrapper'>
+              <div className='cards__block'>
+                <div className='cards__header'>
+                  <p className='cards__title'>Plano 7</p>
+                  <p className='cards__internet'>8GB</p>
+                </div>
+                <div className='cards__apps-list'>
+                  <p className=''>Apps com internet ilimitada:</p>
+                  <div className='cards__apps-list__container'>
+                  </div>
+                </div>
+                <div className='cards__video-list'>
+                  <p className=''>Conteúdo digital em video:</p>
+                  <div className='cards__video-list__container'>
+                  </div>
+                </div>
+                <div className='cards-dependents'>
+                  <p className=''>Adicione depentendes:</p>
+                  <p className=''>Por mais R$ 8,00 cada</p>
+                </div>              
+              </div> 
+              <div className='cards__block-price'>
+                <div className='cards__block-price__value'>
+                  <span className='cards__block-price__prefix'>R$</span>
+                  <span className='cards__block-price__integer'>80</span>
+                  <span className='cards__block-price__sufix'>
+                    <span className='cards__block-price__cents'>,90</span>
+                    <span className='cards__block-price__periodicity'>/mês</span>
+                  </span>
+                </div>
+                <div className='cards__block-price__button'></div>
+              </div> 
+            </div> 
+          </div>
+         </Slider>  
 	    </div>
     );
   }

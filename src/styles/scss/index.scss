@@ -1,7 +1,11 @@
 // == CUSTOM ===================
 @import 'custom/reset';
+// == Slick =================
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 // == MODULES =================
 @import 'modules/App';
 @import 'modules/Header';
 @import 'modules/Title';
 @import 'modules/Subtitle';
+@import 'modules/Cards';

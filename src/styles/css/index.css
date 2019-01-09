@@ -1,3 +1,5 @@
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -83,6 +85,7 @@ img {
 
 .container-main--subtitle {
   font-size: 21px;
-  font-family: 'Sans-serif'; }
+  font-family: 'Sans-serif';
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=index.css.map */
