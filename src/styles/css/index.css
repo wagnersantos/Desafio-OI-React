@@ -66,9 +66,19 @@ img {
   display: flex;
   align-items: center;
   margin-top: 30px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 60px; }
   .container-menu--select select {
     border: 0;
     outline: none; }
+
+.container-main--title {
+  font-size: 28px;
+  font-family: 'Sans-serif';
+  text-transform: uppercase;
+  font-weight: bold;
+  word-wrap: break-word; }
+  .container-main--title span {
+    display: block; }
 
 /*# sourceMappingURL=index.css.map */

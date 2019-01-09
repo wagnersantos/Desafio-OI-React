@@ -1,0 +1,10 @@
+.container-main--title {
+  font-size: 28px;
+  font-family: 'Sans-serif';
+  text-transform: uppercase;
+  font-weight: bold;
+  word-wrap: break-word; }
+  .container-main--title span {
+    display: block; }
+
+/*# sourceMappingURL=Title.css.map */
