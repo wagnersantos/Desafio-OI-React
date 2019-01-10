@@ -11,7 +11,19 @@ class Select extends Component {
 		}
 	}
 	handleChange(value){
-		
+		if(value === 'Rio de Janeiro'){
+			CardsData.getOfferFromRJ()
+			.then(response => response.json())
+			.then(json => this.setState({offer: json}));
+		}else if (value === 'São Paulo') {
+			CardsData.getOfferFromSP()
+			.then(response => response.json())
+			.then(json => this.setState({offer: json}));
+		}else if (value === 'Todos') {
+			CardsData.getOfferFromAll()
+			.then(response => response.json())
+			.then(json => this.setState({offer: json}));
+		}
 	}
 	render(){
 		return (
