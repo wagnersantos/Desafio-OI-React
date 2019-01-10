@@ -1,4 +1,5 @@
 import React from 'react';
+import CardsData from '../../services/cardsData/CardsData';
 
 const Select = (props) => (
 	<div className="container-menu--select">

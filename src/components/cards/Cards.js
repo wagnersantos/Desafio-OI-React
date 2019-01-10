@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import CardsData from '../../services/cardsData/CardsData';
 
 class Cards extends Component {
   render() {
