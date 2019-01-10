@@ -5,7 +5,7 @@ const initialUserState = {
 
 export default function changeSelect(state = [], action){
   switch (action.type) {
-    case 'CHANGE__SELECT':
+    case 'CHANGE_SELECT':
       arr: state.arr.push([action.newItem])
     default:
       return state;
