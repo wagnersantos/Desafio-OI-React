@@ -1,3 +1,4 @@
+import { CHANGE_SELECT } from '../actions/actionTypes';
 
 const initialUserState = {
     arr:[]
