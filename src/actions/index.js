@@ -1,5 +1,6 @@
-import { CHANGE_SELECT } from '../actions/actionTypes';
+import { CHANGE_SELECT } from './actions-types';
 
-export function addToDo(text){
-	return { type: 'ADD_TODO', text }
-}
+export const changeSelect = arr => ({
+	 type: CHANGE_SELECT,
+	 arr 
+})

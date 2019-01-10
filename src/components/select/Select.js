@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import CardsData from '../../services/cardsData/CardsData';
+import { connect } from 'react-redux';
+import * as changeSelect from '../../actions';
 
 class Select extends Component {
 	constructor(props){
@@ -7,7 +9,7 @@ class Select extends Component {
 		this.handleChange = this.handleChange.bind(this);
 
 		this.state = {
-			offer: [] 
+			offer: [] ,
 		}
 	}
 	handleChange(value){
@@ -26,6 +28,7 @@ class Select extends Component {
 		}
 	}
 	render(){
+		const {arr} = this.props;
 		return (
 			<div className="container-menu--select" onChange={(e) => this.handleChange(e.target.value)}>
 				<select>
@@ -38,4 +41,8 @@ class Select extends Component {
 	}
 }
 
-export default Select;
+const mapStateToProps = store => ({
+  arr: store.changeSelect.arr
+});
+
+export default connect(mapStateToProps)(Select);

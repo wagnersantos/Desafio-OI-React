@@ -1,13 +1,15 @@
-import { CHANGE_SELECT } from '../actions/actionTypes';
+import { CHANGE_SELECT } from '../actions/actions-types';
 
-const initialUserState = {
-    arr:[]
+const initialState = {
+    arr:['a','b']
 }
 
-export default function changeSelect(state = [], action){
+export const changeSelect = (state = initialState, action) => {
   switch (action.type) {
-    case 'CHANGE_SELECT':
-      arr: state.arr.push([action.newItem])
+    case CHANGE_SELECT:
+    	return {
+    		arr: state.arr.push([action.newItem])
+    	}
     default:
       return state;
   }
