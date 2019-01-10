@@ -6,11 +6,12 @@ class Select extends Component {
 		super(props);
 		this.handleChange = this.handleChange.bind(this);
 
-		this.state= {
-			offfer: [] 
+		this.state = {
+			offer: [] 
 		}
 	}
 	handleChange(value){
+		
 	}
 	render(){
 		return (
