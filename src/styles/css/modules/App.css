@@ -14,8 +14,9 @@
       max-width: 73.125rem; } }
 
 .offer {
-  background-color: whitesmoke;
-  margin: 0 -1.12rem; }
+  background-color: #f5f5f5;
+  margin: 0 -1.12rem;
+  padding-bottom: 50px; }
   @media (min-width: 768px) {
     .offer {
       margin: 0 auto; } }

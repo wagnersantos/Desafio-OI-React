@@ -40,14 +40,16 @@ class Cards extends Component {
     };
     return (
       <div className="cards">
-        <h2 className='cards__header'>Todas as nossas ofertas:</h2>
+        <h2 className='cards__offer-title'>Todas as nossas ofertas:</h2>
         <Slider {...settings}>
           <div className='cards__item'>
             <div className='cards__wrapper'>
               <div className='cards__block'>
                 <div className='cards__header'>
                   <p className='cards__title'>Plano 8</p>
-                  <p className='cards__internet'>8GB</p>
+                  <p className='cards__internet'>
+                    <span>8GB</span>
+                  </p>
                 </div>
                 <div className='cards__apps-list'>
                   <p className=''>Apps com internet ilimitada:</p>
@@ -59,9 +61,9 @@ class Cards extends Component {
                   <div className='cards__video-list__container'>
                   </div>
                 </div>
-                <div className='cards-dependents'>
-                  <p className=''>Adicione depentendes:</p>
-                  <p className=''>Por mais R$ 8,00 cada</p>
+                <div className='cards__dependents'>
+                  <p className='cards__dependents-title'>Adicione depentendes:</p>
+                  <p className='cards__dependents-price'>Por mais R$ 8,00 cada</p>
                 </div>              
               </div> 
               <div className='cards__block-price'>
@@ -73,16 +75,19 @@ class Cards extends Component {
                     <span className='cards__block-price__periodicity'>/mês</span>
                   </span>
                 </div>
-                <div className='cards__block-price__button'></div>
               </div> 
+              <a href='#' className='cards__button'>Eu quero</a>
             </div> 
           </div>
+          
           <div className='cards__item'>
             <div className='cards__wrapper'>
               <div className='cards__block'>
                 <div className='cards__header'>
-                  <p className='cards__title'>Plano 7</p>
-                  <p className='cards__internet'>8GB</p>
+                  <p className='cards__title'>Plano 8</p>
+                  <p className='cards__internet'>
+                    <span>8GB</span>
+                  </p>
                 </div>
                 <div className='cards__apps-list'>
                   <p className=''>Apps com internet ilimitada:</p>
@@ -94,9 +99,9 @@ class Cards extends Component {
                   <div className='cards__video-list__container'>
                   </div>
                 </div>
-                <div className='cards-dependents'>
-                  <p className=''>Adicione depentendes:</p>
-                  <p className=''>Por mais R$ 8,00 cada</p>
+                <div className='cards__dependents'>
+                  <p className='cards__dependents-title'>Adicione depentendes:</p>
+                  <p className='cards__dependents-price'>Por mais R$ 8,00 cada</p>
                 </div>              
               </div> 
               <div className='cards__block-price'>
@@ -108,8 +113,8 @@ class Cards extends Component {
                     <span className='cards__block-price__periodicity'>/mês</span>
                   </span>
                 </div>
-                <div className='cards__block-price__button'></div>
               </div> 
+              <a href='#' className='cards__button'>Eu quero</a>
             </div> 
           </div>
          </Slider>  

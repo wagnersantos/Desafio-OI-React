@@ -10,7 +10,7 @@ class App extends Component {
             <Header />
         </div>
         <div className='row'>
-          <Main />
+            <Main />
         </div>
       </div>
     );
