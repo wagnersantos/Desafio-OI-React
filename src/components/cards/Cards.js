@@ -9,6 +9,7 @@ class Cards extends Component {
       arrows: false,
       infinite: false,
       speed: 500,
+      variableWidth: true,
       slidesToShow: 4,
       slidesToScroll: 4,
       initialSlide: 0,
@@ -18,8 +19,6 @@ class Cards extends Component {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
-            infinite: true,
-            dots: true
           }
         },
         {
@@ -40,7 +39,8 @@ class Cards extends Component {
       ]
     };
     return (
-     	<div className="cards">
+      <div className="cards">
+        <h2 className='cards__header'>Todas as nossas ofertas:</h2>
         <Slider {...settings}>
           <div className='cards__item'>
             <div className='cards__wrapper'>

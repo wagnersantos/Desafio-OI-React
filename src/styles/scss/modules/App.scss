@@ -1,4 +1,4 @@
-.container {
+.row {
     margin-left: 1.12rem;
     margin-right: 1.12rem;
 
@@ -12,5 +12,13 @@
     }
     @media (min-width: 1250px) {
     	max-width: 73.125rem;
+    }
+}
+
+.offer{
+    background-color: hsl(0, 0%, 96%);
+    margin: 0 -1.12rem;
+     @media(min-width: 768px){
+        margin: 0 auto;
     }
 }

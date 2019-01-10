@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AACC,yBAAW;EACV,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,YAAY;EACzB,aAAa,EAAE,IAAI",
-"sources": ["../../scss/modules/Subtitle.scss"],
+"mappings": "",
+"sources": [],
 "names": [],
 "file": "Subtitle.css"
 }

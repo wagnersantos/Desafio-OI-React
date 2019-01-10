@@ -1,16 +1,23 @@
-.container {
+.row {
   margin-left: 1.12rem;
   margin-right: 1.12rem; }
   @media (min-width: 768px) {
-    .container {
+    .row {
       margin-left: auto;
       margin-right: auto;
       max-width: 44rem; } }
   @media (min-width: 1024px) {
-    .container {
+    .row {
       max-width: 60rem; } }
   @media (min-width: 1250px) {
-    .container {
+    .row {
       max-width: 73.125rem; } }
+
+.offer {
+  background-color: whitesmoke;
+  margin: 0 -1.12rem; }
+  @media (min-width: 768px) {
+    .offer {
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=App.css.map */

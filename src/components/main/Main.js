@@ -7,9 +7,12 @@ class Main extends Component {
   render() {
     return (
     	<div className="container-main"> 
-    		<Title /> 
-    		<Subtitle />
-    		<Cards /> 
+    		<div>
+    			<Title />
+    		</div>
+    		<div className='offer'> 
+    			<Cards /> 
+    		</div>
       	</div>
     );
   }

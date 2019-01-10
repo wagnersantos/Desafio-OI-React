@@ -1,3 +1,54 @@
 .cards{
-	
+	padding-top: 30px;
+	text-align: center;
+	&__header{
+		font-size: 24px;
+		font-family: "SimplonBP-Regular",Arial;
+		color: hsl(0, 0%, 13%);
+		line-height: 1;
+		margin-bottom: 40px;
+	}
+	&__item{
+		margin: 0 auto;
+		text-align: center;
+	    box-sizing: border-box;
+	}
+	.slick-slider {
+	    display: block;
+	    width: 100%;
+	    max-width: 244px;
+	    margin-left: 15px;
+	    @media (min-width:370px) {
+	        max-width: 324px;
+	    }
+	    @media (min-width:768px) {
+	        max-width: (294+30) * 2px;
+	    }
+	}
+	.slick-slide{
+		position: relative;
+		margin: 0 8px;
+		margin-bottom: 20px;
+	}
+	.slick-list{
+		overflow: visible;
+	}
+	&__wrapper {
+        position: relative;
+        padding: 15px 20px 20px 20px;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 9px 20px 70px 0 rgba(2,2,2,0.15);
+        text-align: center;
+    }
+    &__title{
+    	font-size: 14px;
+    	font-family: 'Helvetica Neue,Helvetica,Arial,sans-serif';
+    	margin-bottom: 15px;
+    }
+    &__internet{
+    	font-size: 32px;
+    	font-weight: bold;
+    	margin-bottom: 15px;
+    }
 }
