@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Slider from "react-slick";
-
+import Slider from 'react-slick';
+import CardsData from '../../services/cardsData/CardsData';
 
 class Cards extends Component {
   render() {
@@ -118,7 +118,7 @@ class Cards extends Component {
               <span href='#' className='cards__button'>Eu quero</span>
             </div> 
           </div>
-          
+
          </Slider>  
 	    </div>
     );
