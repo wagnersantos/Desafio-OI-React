@@ -6,12 +6,14 @@ import Select from '../../components/select/Select';
 class Header extends Component {
   render() {
     return (
-        <header>
-            <div className="container-menu">   
+        <div className='row'> 
+            <header>
+                <div className="container-menu">   
     		        <Logo /> 
     		        <Select />    
-            </div>
-        </header>
+                </div>
+            </header>
+        </div>
     );
   }
 }

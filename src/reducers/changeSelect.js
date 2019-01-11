@@ -1,14 +1,14 @@
 import { CHANGE_SELECT } from '../actions/actions-types';
 
 const initialState = {
-    arr:['a','b']
+    selected:''
 }
 
 export const changeSelect = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_SELECT:
     	return {
-    		arr: state.arr.push([action.newItem])
+    		selected: action.selected
     	}
     default:
       return state;

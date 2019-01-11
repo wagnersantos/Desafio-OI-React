@@ -8,19 +8,13 @@ import {Provider} from 'react-redux';
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <div className="container">
-          <div className='row'>  
+      <div className="container"> 
+        <Provider store={store}>
             <Header />
-          </div>
-          <div className='row'>
-             <Main />
-          </div>
-          <div className='row'>
-             <Footer />
-          </div>
-        </div>
-      </Provider>
+            <Main />
+            <Footer />
+        </Provider>
+      </div>
     );
   }
 }

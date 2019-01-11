@@ -1,6 +1,27 @@
-import { CHANGE_SELECT } from './actions-types';
+import { CHANGE_SELECT,fetchOfferBegin, fetchOfferFailure, fetchOfferSuccess } from './actions-types'
 
-export const changeSelect = arr => ({
-	 type: CHANGE_SELECT,
-	 arr 
+export const changeSelect = (selected) => ({
+	 type: CHANGE_SELECT, selected 
 })
+
+
+export function getOffer(param = "") {
+  return dispatch => {
+    dispatch(fetchOfferBegin());
+    return fetch(`https://cors-anywhere.herokuapp.com/https://desafio-oi.herokuapp.com/${param}`)
+      .then(handleErrors)
+      .then(res => res.json())
+      .then(json => {
+        dispatch(fetchOfferSuccess(json));
+        return json[0];
+      })
+      .catch(error => dispatch(fetchOfferFailure(error)));
+  };
+}
+
+function handleErrors(response) {
+  if (!response.ok) {
+    throw Error(response.statusText);
+  }
+  return response;
+}

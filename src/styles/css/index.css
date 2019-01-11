@@ -113,9 +113,7 @@ img {
     box-sizing: border-box; }
   .cards .slick-slider {
     width: 100%;
-    max-width: 520px;
-    margin: 0 auto;
-    padding: 0 30px; }
+    max-width: 520px; }
     @media (min-width: 370px) {
       .cards .slick-slider {
         max-width: 324px; } }
@@ -127,7 +125,7 @@ img {
     margin: 0 8px;
     margin-bottom: 20px; }
   .cards .slick-list {
-    overflow: visible; }
+    padding: 0 30px; }
   .cards .slick-dots {
     left: 0;
     font-size: 18px; }
@@ -141,7 +139,7 @@ img {
     padding: 20px 30px;
     border-radius: 4px;
     background-color: #fff;
-    box-shadow: 9px 20px 70px 0 rgba(2, 2, 2, 0.15);
+    box-shadow: 9px 3px 40px 0 rgba(2, 2, 2, 0.11);
     text-align: center; }
   .cards__title {
     font-size: 14px;

@@ -3,11 +3,13 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
     return (
-        <footer>
-            <div className="container-footer"> 
-                <p>Todos os direitos reservados</p> 
-            </div>
-        </footer>
+    	<div className='row'> 
+	        <footer>
+    	        <div className="container-footer"> 
+        	        <p>Todos os direitos reservados</p> 
+           	 	</div>
+        	</footer>
+        </div>
     );
   }
 }
