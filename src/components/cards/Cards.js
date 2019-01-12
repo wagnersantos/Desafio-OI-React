@@ -21,10 +21,13 @@ class Cards extends Component {
       <div className='offer'> 
         <div className="cards">
           <h2 className='cards__offer-title'>Todas as nossas ofertas:</h2>
+          
           {
             fetching && <Loader />
           }
-          <CardsItem arr={arr} />  
+          {
+            arr.length !== 0 && <CardsItem arr={arr} />  
+          }
   	    </div>
       </div>
     )
