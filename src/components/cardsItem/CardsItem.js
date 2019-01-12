@@ -11,7 +11,7 @@ const CardsHeader =  ({arr}) => (
     </div>
 )
 const CardsApss = ({arr}) => (
-    (arr.isencao.length !== 0) &&
+    ((arr.isencao.length !== 0) &&
     (<div className='cards__apps-list'>
         <p className='cards__apps-list__title'>Apps com internet ilimitada:</p>
         <div className='cards__apps-list__container'>
@@ -26,9 +26,9 @@ const CardsApss = ({arr}) => (
                 }
             </ul>
         </div>
-    </div>)
+    </div>))
     ||
-    (arr.isencao.length === 0) &&
+    ((arr.isencao.length === 0) &&
     (<div className='cards__apps-list'>
         <p className='cards__apps-list__title'>&nbsp;</p>
         <div className='cards__apps-list__container'>
@@ -36,12 +36,12 @@ const CardsApss = ({arr}) => (
                 <span>____</span>
             </ul>
         </div>
-    </div>)
+    </div>))
 )
 
 const CardsVideo = ({arr}) => (
     
-        (arr.conteudoDigital.length !== 0) &&
+        ((arr.conteudoDigital.length !== 0) &&
         (<div className='cards__video-list'>
             <p className=''>Conteúdo digital em video:</p>
             <div className='cards__video-list__container'>
@@ -60,8 +60,9 @@ const CardsVideo = ({arr}) => (
                     }
                 </div>
             </div>
-         </div>) ||
-        (arr.conteudoDigital.length === 0) &&
+        </div>)) 
+        ||
+        ((arr.conteudoDigital.length === 0) &&
         (<div className='cards__video-list'>
             <p className='cards__video-list__title'>&nbsp;</p>
             <div className='cards__video-list__container'>
@@ -69,22 +70,21 @@ const CardsVideo = ({arr}) => (
                     <span>____</span>
                 </div>
             </div>
-         </div>)
-    
+         </div>))
 )
 
 const CardsDependents = ({arr}) => (
-    (arr['dependente-preco'].length !== 0) &&
+    ((arr['dependente-preco'].length !== 0) &&
     (<div className='cards__dependents'>
         <p className='cards__dependents-title'>Adicione depentendes:</p>
         <p className='cards__dependents-price'>{`Por mais R$ ${arr['dependente-preco']} cada`}</p>
-    </div>)
+    </div>))
     || 
-    (arr['dependente-preco'].length === 0) &&
+    ((arr['dependente-preco'].length === 0) &&
     (<div className='cards__dependents'>
         <p className='cards__dependents-title'>&nbsp;</p>
         <span>____</span>
-    </div>)
+    </div>))
 )
 
 const CardsPrice = ({arr}) => (
