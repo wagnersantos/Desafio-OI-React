@@ -191,9 +191,11 @@ img {
       justify-content: center;
       align-items: center; }
       .cards__video-list__logos img {
-        width: 22.5px;
+        height: 40px;
         margin-right: 4px;
         border-radius: 4px; }
+      .cards__video-list__logos span {
+        height: 40px; }
   .cards__dependents {
     margin-bottom: 20px; }
     .cards__dependents-title {

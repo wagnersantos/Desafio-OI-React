@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Fox from '../../components/images/fox/Fox';
+import { Fox, Hbogo, Espn, Discovery, Noggin, Colecao } from '../../components/images';
 
 const CardsHeader =  ({arr}) => (
     <div className='cards__header'>
@@ -11,7 +11,8 @@ const CardsHeader =  ({arr}) => (
     </div>
 )
 const CardsApss = ({arr}) => (
-    <div className='cards__apps-list'>
+    (arr.isencao.length !== 0) &&
+    (<div className='cards__apps-list'>
         <p className='cards__apps-list__title'>Apps com internet ilimitada:</p>
         <div className='cards__apps-list__container'>
             <ul className='cards__apps-list__social-icons'>
@@ -25,31 +26,65 @@ const CardsApss = ({arr}) => (
                 }
             </ul>
         </div>
-    </div>
+    </div>)
+    ||
+    (arr.isencao.length === 0) &&
+    (<div className='cards__apps-list'>
+        <p className='cards__apps-list__title'>&nbsp;</p>
+        <div className='cards__apps-list__container'>
+            <ul className='cards__apps-list__social-icons'>
+                <span>____</span>
+            </ul>
+        </div>
+    </div>)
 )
 
 const CardsVideo = ({arr}) => (
-    <div className='cards__video-list'>
-        <p className=''>Conteúdo digital em video:</p>
-        <div className='cards__video-list__container'>
-            <div className='cards__video-list__logos'>
-                {
-                    arr.conteudoDigital.map((logo,index) => {
-                        return(
-                           logo === 'fox' && <Fox />
-                        )
-                    })
-                }
+    
+        (arr.conteudoDigital.length !== 0) &&
+        (<div className='cards__video-list'>
+            <p className=''>Conteúdo digital em video:</p>
+            <div className='cards__video-list__container'>
+                <div className='cards__video-list__logos'>
+                    {
+                        arr.conteudoDigital.map((logo,index) => {
+                            return(
+                               (logo === 'fox' && <Fox key={index} />) ||
+                               (logo === 'hbogo' && <Hbogo key={index} />) ||
+                               (logo === 'watch-espn' && <Espn key={index} />) ||
+                               (logo === 'discovery-kids' && <Discovery key={index} />) ||
+                               (logo === 'noggin' && <Noggin key={index} />) ||
+                               (logo === 'colecao-oi' && <Colecao key={index} />)
+                            )
+                        })
+                    }
+                </div>
             </div>
-        </div>
-    </div>
+         </div>) ||
+        (arr.conteudoDigital.length === 0) &&
+        (<div className='cards__video-list'>
+            <p className='cards__video-list__title'>&nbsp;</p>
+            <div className='cards__video-list__container'>
+                <div className='cards__video-list__logos'>
+                    <span>____</span>
+                </div>
+            </div>
+         </div>)
+    
 )
 
 const CardsDependents = ({arr}) => (
-    <div className='cards__dependents'>
+    (arr['dependente-preco'].length !== 0) &&
+    (<div className='cards__dependents'>
         <p className='cards__dependents-title'>Adicione depentendes:</p>
         <p className='cards__dependents-price'>{`Por mais R$ ${arr['dependente-preco']} cada`}</p>
-    </div> 
+    </div>)
+    || 
+    (arr['dependente-preco'].length === 0) &&
+    (<div className='cards__dependents'>
+        <p className='cards__dependents-title'>&nbsp;</p>
+        <span>____</span>
+    </div>)
 )
 
 const CardsPrice = ({arr}) => (

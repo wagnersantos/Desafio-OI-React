@@ -137,9 +137,12 @@
     		justify-content: center;
     		align-items: center;
     		img{
-    			width: 22.5px;
+    			height: 40px;
     			margin-right: 4px;
     			border-radius: 4px;
+    		}
+    		span{
+    			height: 40px;
     		}
     	}
     }
