@@ -11,8 +11,7 @@ class Cards extends Component {
   }
   render() {
     const {arr, fetching, error, selected,dispatch} = this.props;
-    console.log(arr);
-
+    
     if (error) {
       return <div>Error! {error.message}</div>;
     }
@@ -21,12 +20,12 @@ class Cards extends Component {
       <div className='offer'> 
         <div className="cards">
           <h2 className='cards__offer-title'>Todas as nossas ofertas:</h2>
-          
+
           {
             fetching && <Loader />
           }
           {
-            arr.length !== 0 && <CardsItem arr={arr} />  
+            arr.length !== 0 && <CardsItem arr={arr.slice(0,8)} />  
           }
   	    </div>
       </div>
