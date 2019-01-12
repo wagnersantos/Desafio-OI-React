@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { getOffer } from '../../actions';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import CardsItem from '../../components/cardsItem/CardsItem';
 import Loader from '../../components/images/loader/Loader';
 
@@ -10,7 +9,7 @@ class Cards extends Component {
      this.props.dispatch(getOffer());
   }
   render() {
-    const {arr, fetching, error, selected,dispatch} = this.props;
+    const { arr, fetching, error } = this.props;
     
     if (error) {
       return <div>Error! {error.message}</div>;
@@ -38,8 +37,5 @@ const mapStateToProps = store => ({
   fetching: store.getOffer.fetching,
   error: store.getOffer.error
 });
-
-
-//const mapDispatchToProps = dispatch => bindActionCreators( getOffer , dispatch);
 
 export default connect (mapStateToProps)(Cards);

@@ -1,4 +1,3 @@
-import { handleActions } from 'redux-actions'
 import { OFFER_FETCHING, OFFER_ERROR, OFFER_SUCCESS } from '../actions/actions-types';
 
 const initialState = {

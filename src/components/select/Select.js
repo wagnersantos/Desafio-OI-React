@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import CardsData from '../../services/cardsData/CardsData';
 import { connect } from 'react-redux';
 import { getOffer } from '../../actions';
-import * as changeSelect from '../../actions';
-import { bindActionCreators } from 'redux';
 
 class Select extends Component {
 	constructor(props){
