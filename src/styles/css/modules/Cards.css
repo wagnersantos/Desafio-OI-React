@@ -1,6 +1,7 @@
 .cards {
   padding-top: 30px;
-  text-align: center; }
+  text-align: center;
+  min-height: 300px; }
   .cards__offer-title {
     font-size: 24px;
     font-family: 'Arial';
@@ -94,5 +95,9 @@
     text-decoration: none;
     cursor: pointer;
     padding: 16px 40px; }
+  .cards__loader img {
+    margin: 0 auto;
+    width: 100px;
+    transform: translateY(50%); }
 
 /*# sourceMappingURL=Cards.css.map */

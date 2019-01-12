@@ -7,14 +7,10 @@ class Main extends Component {
     return (
       <div className='row'> 
       	<div className="container-main"> 
-      		<div>
-      			<Title />
-      		</div>
-      		<div className='offer'> 
-      			<Cards /> 
-      		</div>
-        	</div>
+      		<Title />
+      		<Cards /> 
         </div>
+      </div>
     );
   }
 }

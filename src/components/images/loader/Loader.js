@@ -1,9 +1,9 @@
 import React from 'react';
-import loaderSrc from '../../assets/loader.gif';
+import loaderSrc from '../../../assets/images/img/loader.gif';
 
 const Loader = (props) => (
-	<div>
-		<img style={{width: 150}} alt='loader icon' src={loaderSrc}/>
+	<div className='cards__loader'>
+		<img alt='loader icon' src={loaderSrc}/>
 	</div>
 )
 
