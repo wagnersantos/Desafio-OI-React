@@ -36,6 +36,4 @@ const mapStateToProps = store => ({
   error: store.getOffer.error
 });
 
-//const mapDispatchToProps = dispatch => bindActionCreators( changeSelect , dispatch);
-
 export default connect(mapStateToProps)(Select);
