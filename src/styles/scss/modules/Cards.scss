@@ -132,6 +132,11 @@
     }
      &__video-list{
     	min-height: 66px;
+    	&__logos{
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    	}
     }
     &__dependents{
     	margin-bottom: 20px;

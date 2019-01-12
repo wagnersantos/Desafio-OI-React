@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import Fox from '../../components/images/fox/Fox';
 
 const CardsHeader =  ({arr}) => (
     <div className='cards__header'>
@@ -31,6 +32,15 @@ const CardsVideo = ({arr}) => (
     <div className='cards__video-list'>
         <p className=''>Conteúdo digital em video:</p>
         <div className='cards__video-list__container'>
+            <div className='cards__video-list__logos'>
+                {
+                    arr.conteudoDigital.map((logo,index) => {
+                        return(
+                           logo === 'fox' && <Fox />
+                        )
+                    })
+                }
+            </div>
         </div>
     </div>
 )
