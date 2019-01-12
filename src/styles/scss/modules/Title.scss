@@ -8,5 +8,8 @@
 		span{
 			display: block;
 		}
+		@media(min-width: 1024px){
+			margin-bottom: 65px;
+		}
 	}
 }

@@ -13,7 +13,9 @@ const CardsHeader =  ({arr}) => (
 const CardsApss = ({arr}) => (
     ((arr.isencao.length !== 0) &&
     (<div className='cards__apps-list'>
-        <p className='cards__apps-list__title'>Apps com internet ilimitada:</p>
+        <p className='cards__apps-list__title'>
+            Apps com <span className='underline'>internet ilimitada:</span>
+        </p>
         <div className='cards__apps-list__container'>
             <ul className='cards__apps-list__social-icons'>
                 {
@@ -43,7 +45,9 @@ const CardsVideo = ({arr}) => (
     
         ((arr.conteudoDigital.length !== 0) &&
         (<div className='cards__video-list'>
-            <p className=''>Conteúdo digital em video:</p>
+            <p className='cards__video-list__title'>
+                <span className='underline'>Conteúdo digital</span> em video:
+            </p>
             <div className='cards__video-list__container'>
                 <div className='cards__video-list__logos'>
                     {
@@ -108,23 +112,22 @@ const settings = {
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
-    {
-      breakpoint: 1024,
+     {
+      breakpoint: 1250,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        initialSlide: 2
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -133,7 +136,7 @@ const settings = {
     ]
 }  
 const CardsItem = ({arr}) => (
-    <div>
+    <div className='cards__items'>
         <Slider {...settings}>
             {arr.map((arr, index) => (
                 <div className='cards__item' key={index}>

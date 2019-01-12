@@ -6,5 +6,8 @@
   margin-bottom: 10px; }
   .container-main--title span {
     display: block; }
+  @media (min-width: 1024px) {
+    .container-main--title {
+      margin-bottom: 65px; } }
 
 /*# sourceMappingURL=Title.css.map */

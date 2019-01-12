@@ -16,18 +16,15 @@ class Cards extends Component {
     }
 
     return (
-      <div className='offer'> 
-        <div className="cards">
-          <h2 className='cards__offer-title'>Todas as nossas ofertas:</h2>
-
-          {
-            fetching && <Loader />
-          }
-          {
-            arr.length !== 0 && <CardsItem arr={arr.slice(0,8)} />  
-          }
-  	    </div>
-      </div>
+      <div className="cards">
+        <h2 className='cards__offer-title'>Todas as nossas ofertas:</h2>
+        {
+          fetching && <Loader />
+        }
+        {
+          arr.length !== 0 && <CardsItem arr={arr.slice(0,8)} />  
+        }
+	    </div>
     )
   }
 }

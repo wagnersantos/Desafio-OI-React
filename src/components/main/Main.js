@@ -5,12 +5,14 @@ import Cards from '../../components/cards/Cards';
 class Main extends Component {
   render() {
     return (
-      <div className='row'> 
-      	<div className="container-main"> 
-      		<Title />
-      		<Cards /> 
+      <section className="container-main">
+        <div className="conatiner-main__title">
+          <Title />
         </div>
-      </div>
+        <div className='conatiner-main__offer'> 
+          <Cards /> 
+        </div>
+      </section>
     );
   }
 }

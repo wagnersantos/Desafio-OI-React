@@ -1,7 +1,12 @@
 .cards{
-	padding-top: 30px;
+    width: 100%;
+    margin: 0 auto;
 	text-align: center;
 	min-height: 300px;
+	padding-top: 30px;
+	@media(min-width: 1024px){
+		padding-top: 65px;
+	}
 	&__offer-title{
 		font-size: 24px;
 		font-family: 'Arial';
@@ -10,27 +15,31 @@
 		margin-bottom: 40px;
 	}
 	&__item{
+        width:100%;
+        max-width: 280px;
 		margin: 0 auto;
 		text-align: center;
 	    box-sizing: border-box;
 	}
 	.slick-slider {
-	    width: 100%;
-	    max-width: (244+16)*2px;
-	    @media (min-width:370px) {
-	        max-width: 324px;
-	    }
-	    @media (min-width:768px) {
-	        max-width: (294+16) * 2px;
-	    }
+        display: block;
+        width: 100%;
+	   
 	}
 	.slick-slide{
 		position: relative;
 		margin: 0 8px;
 		margin-bottom: 20px;
+		padding-top: 4px;
 	}
 	.slick-list{
-		padding: 0 30px;
+		padding: 0 22px;
+		@media(min-width: 1024px){
+			padding:0 30px;
+		}
+		@media(min-width: 1250px){
+			padding:0 50px;
+		} 
 	}
 	.slick-dots{
 		left: 0;
@@ -38,13 +47,14 @@
 		li{
 			button{
 				&::before{
-					font-size: 9px;
+					font-size: 6px;
 					border: 0;
 				}
 			}
 			&.slick-active{
 				button{
 					&::before{
+						font-size: 8px;
 						color :  #e40f4b;
 					}
 				}
@@ -54,11 +64,12 @@
 	}
 	&__wrapper {
         position: relative;
-        padding: 20px 30px;
+        padding: 20px 35px 35px 40px;
         border-radius: 4px;
         background-color: #fff;
-        box-shadow: 9px 3px 40px 0 rgba(2, 2, 2, 0.11);
+        box-shadow: -4px 8px 24px 0 rgba(2, 2, 2, 0.15);
         text-align: center;
+        min-width: 260px;
     }
     &__title{
     	font-size: 14px;
@@ -74,10 +85,20 @@
     	background-clip: text;
     	margin-bottom: 4px;
     }
+    .underline{
+		border-bottom: 1px solid hsl(0, 0%, 56%);
+	}
     &__apps-list{ 
     	min-height: 66px;
+    	@media(min-width: 1024px){
+  		    margin: 18px 0 10px 0;
+    	}
     	&__title{
     		margin-bottom: 7px;
+    		font-size: 14px;
+    		@media(min-width: 1024px){
+    			font-size: 16px;
+    		}
     	}
     	&__social-icons{
     		display: flex;
@@ -145,6 +166,12 @@
     			height: 40px;
     		}
     	}
+    	&__title{
+    		font-size: 14px;
+    		@media(min-width: 1024px){
+    			font-size: 16px;
+    		}
+    	}
     }
     &__dependents{
     	margin-bottom: 20px;
@@ -154,6 +181,9 @@
     		font-family: 'Arial';
     		font-weight: bold;
     		margin-bottom: 4px;
+    		@media(min-width: 1024px){
+    			font-size: 16px;
+    		}
     	}
     	&-price{
     		font-size: 12px;
@@ -165,12 +195,18 @@
 			font-size: 32px;
 			font-weight: bold;
 			font-family: 'Arial';
+			@media(min-width: 1024px){
+    			font-size: 36px;
+    		}
 		}
 		&__prefix{
 			margin-right: 4px;
 			font-size: 16px;
 			position: relative;
-			bottom: -2px;			
+			bottom: -2px;
+			@media(min-width: 1024px){
+    			font-size: 22px;
+    		}			
 		}
 		&__sufix{
 			font-size: 15px;
@@ -179,6 +215,10 @@
 			position: relative;
 			bottom: 14px;
 			margin-left: 4px;
+			@media(min-width: 1024px){
+    			font-size: 22px;
+    			bottom: 19px;
+    		}
 		}
     }
     &__button{
@@ -193,6 +233,9 @@
         text-decoration: none;
         cursor: pointer;
         padding: 16px 40px;
+        &:hover{
+        	background-color: hsl(53, 100%, 62%);
+        }
     }
     &__loader{
     	img{

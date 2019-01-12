@@ -1,4 +1,4 @@
-.row {
+.grid {
     margin-left: 1.12rem;
     margin-right: 1.12rem;
 
@@ -15,11 +15,10 @@
     }
 }
 
-.offer{
+.conatiner-main__offer{
     background-color: #f5f5f5;
-    margin: 0 -1.12rem;
     padding-bottom: 50px;
-     @media(min-width: 768px){
-        margin: 0 auto;
-    }
+     @media(min-width: 1024px) {
+        padding-bottom: 80px;
+     }
 }
