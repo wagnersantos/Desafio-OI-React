@@ -54,7 +54,37 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 4px; }
-  .cards__apps-list, .cards__video-list {
+  .cards__apps-list {
+    min-height: 66px; }
+    .cards__apps-list__title {
+      margin-bottom: 7px; }
+    .cards__apps-list__social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .cards__apps-list__social-icons li span {
+        width: 24px;
+        height: 23px;
+        background: url("../../assets/images/icons/sprite-social-icons.png") no-repeat 0 0;
+        border-radius: 6px;
+        box-sizing: content-box;
+        margin-right: 4px;
+        border: 1px solid #dbdbdb;
+        background-size: cover;
+        display: block; }
+      .cards__apps-list__social-icons .icon-netflix span {
+        background-position: 0; }
+      .cards__apps-list__social-icons .icon-youtube span {
+        background-position: -31px 0; }
+      .cards__apps-list__social-icons .icon-facebook span {
+        background-position: -61px 0; }
+      .cards__apps-list__social-icons .icon-mensseger span {
+        background-position: -92px 0; }
+      .cards__apps-list__social-icons .icon-instagram span {
+        background-position: -123.5px 0; }
+      .cards__apps-list__social-icons .icon-whatsapp span {
+        background-position: -154px 0; }
+  .cards__video-list {
     min-height: 66px; }
   .cards__dependents {
     margin-bottom: 20px; }

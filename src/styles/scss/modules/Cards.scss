@@ -74,7 +74,63 @@
     	background-clip: text;
     	margin-bottom: 4px;
     }
-    &__apps-list, &__video-list{
+    &__apps-list{ 
+    	min-height: 66px;
+    	&__title{
+    		margin-bottom: 7px;
+    	}
+    	&__social-icons{
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		li{
+    			span{
+				    width: 24px;
+				    height: 23px;
+    				background: url("../../assets/images/icons/sprite-social-icons.png") no-repeat 0 0;
+    				border-radius: 6px;
+    				box-sizing: content-box;
+    				margin-right: 4px;
+    				border: 1px solid hsl(0, 0%, 86%);
+    				background-size: cover;
+					display: block;
+    			}
+    		}
+    		.icon{
+    			&-netflix{
+					span{
+						background-position: 0;
+					}
+				}
+				&-youtube{
+					span{
+						background-position: -31px 0;
+					}
+				}
+				&-facebook{
+					span{
+						background-position: -61px 0;
+					}
+				}
+				&-mensseger{
+					span{
+						background-position: -92px 0;
+					}
+				}
+				&-instagram{
+					span{
+						background-position: -123.5px 0;
+					}
+				}
+				&-whatsapp{
+					span{
+						background-position: -154px 0;
+					}
+				}
+			} 
+    	}
+    }
+     &__video-list{
     	min-height: 66px;
     }
     &__dependents{

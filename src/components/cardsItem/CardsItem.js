@@ -11,8 +11,18 @@ const CardsHeader =  ({arr}) => (
 )
 const CardsApss = ({arr}) => (
     <div className='cards__apps-list'>
-        <p className=''>Apps com internet ilimitada:</p>
+        <p className='cards__apps-list__title'>Apps com internet ilimitada:</p>
         <div className='cards__apps-list__container'>
+            <ul className='cards__apps-list__social-icons'>
+                {
+                    arr.isencao.map((icon,index) => 
+                        <li className={`icon-${icon}`} key={index}>
+                            <span title={`ícone ${icon}`}></span>
+                        </li>
+                    )
+                    
+                }
+            </ul>
         </div>
     </div>
 )
