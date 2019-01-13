@@ -4,6 +4,7 @@ import Espn from './espn/Espn';
 import Discovery from './discovery/Discovery';
 import Noggin from './noggin/Noggin';
 import Colecao from './colecao/Colecao';
+import Logo from './logo/Logo';
 
 export{
 	Fox,
@@ -11,5 +12,6 @@ export{
 	Espn,
 	Discovery,
 	Noggin,
-	Colecao
+	Colecao,
+	Logo
 }

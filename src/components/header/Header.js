@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../components/logo/Logo';
+import { Logo } from '../../components/images';
 import Select from '../../components/select/Select';
 
 

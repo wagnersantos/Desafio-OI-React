@@ -1,5 +1,5 @@
 import React from 'react';
-import loaderSrc from '../../assets/images/logo/oi.svg';
+import loaderSrc from '../../../assets/images/logo/oi.svg';
 
 const Logo = (props) => (
 	<div className="container-menu--logo">
