@@ -152,11 +152,10 @@
   .cards__block-price__prefix {
     margin-right: 4px;
     font-size: 16px;
-    position: relative;
-    bottom: -2px; }
+    position: relative; }
     @media (min-width: 1024px) {
       .cards__block-price__prefix {
-        font-size: 22px; } }
+        font-size: 18px; } }
   .cards__block-price__sufix {
     font-size: 15px;
     display: inline-flex;
@@ -166,8 +165,8 @@
     margin-left: 4px; }
     @media (min-width: 1024px) {
       .cards__block-price__sufix {
-        font-size: 22px;
-        bottom: 19px; } }
+        font-size: 16px;
+        bottom: 16px; } }
   .cards__button {
     border-radius: 2px;
     color: #222;

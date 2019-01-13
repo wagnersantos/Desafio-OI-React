@@ -217,9 +217,8 @@
 			margin-right: 4px;
 			font-size: 16px;
 			position: relative;
-			bottom: -2px;
 			@media(min-width: 1024px){
-    			font-size: 22px;
+    			font-size: 18px;
     		}			
 		}
 		&__sufix{
@@ -230,8 +229,8 @@
 			bottom: 14px;
 			margin-left: 4px;
 			@media(min-width: 1024px){
-    			font-size: 22px;
-    			bottom: 19px;
+				font-size: 16px;
+    			bottom: 16px;
     		}
 		}
     }
