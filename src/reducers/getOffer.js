@@ -6,23 +6,21 @@ const initialState = {
   error: null
 }
 
-
-export function getOffer (state = initialState, action) {
-  //console.log(action)
+export const getOffer = (state = initialState, action) => {
   switch(action.type) {
     case OFFER_FETCHING:
       return {
         ...state,
         fetching: true,
         error: null
-      };
+      }
 
     case OFFER_SUCCESS:
       return {
         ...state,
         fetching: false,
         arr: action.payload.offer
-      };
+      }
 
     case OFFER_ERROR:
       return {
@@ -30,7 +28,7 @@ export function getOffer (state = initialState, action) {
         fetching: false,
         error: action.payload.error,
         arr: ''
-      };
+      }
 
     default:
       return state;
