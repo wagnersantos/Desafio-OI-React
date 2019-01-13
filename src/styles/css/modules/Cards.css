@@ -38,12 +38,17 @@
     @media (min-width: 1250px) {
       .cards .slick-list {
         padding: 0 50px; } }
+  .cards .slick-list:focus {
+    outline: none; }
   .cards .slick-dots {
     left: 0;
     font-size: 18px; }
-    .cards .slick-dots li button::before {
+    .cards .slick-dots li button:before {
       font-size: 6px;
-      border: 0; }
+      border: 0;
+      color: #616161; }
+    .cards .slick-dots li button:hover:before {
+      color: #d4d4d4; }
     .cards .slick-dots li.slick-active button::before {
       font-size: 8px;
       color: #e40f4b; }

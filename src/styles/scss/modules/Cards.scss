@@ -44,14 +44,25 @@
 			padding:0 50px;
 		} 
 	}
+	.slick-list:focus {
+	    outline: none;
+	}
 	.slick-dots{
 		left: 0;
 		font-size: 18px;
 		li{
 			button{
-				&::before{
+				&:before{
 					font-size: 6px;
 					border: 0;
+					color: #616161;
+				}
+				&:hover{
+					@at-root{
+						&:before{
+							color: #d4d4d4;
+						}
+					}
 				}
 			}
 			&.slick-active{
