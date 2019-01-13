@@ -1,9 +1,4 @@
-import { CHANGE_SELECT,fetchOfferBegin, fetchOfferFailure, fetchOfferSuccess } from './actions-types'
-
-export const changeSelect = (selected) => ({
-	 type: CHANGE_SELECT, selected 
-})
-
+import { fetchOfferBegin, fetchOfferFailure, fetchOfferSuccess } from './actions-types'
 
 export function getOffer(param = "") {
   return dispatch => {

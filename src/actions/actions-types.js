@@ -1,4 +1,3 @@
-export const CHANGE_SELECT = 'CHANGE_SELECT';
 export const OFFER_FETCHING = 'OFFER_FETCHING';
 export const OFFER_ERROR    = 'OFFER_ERROR';
 export const OFFER_SUCCESS  = 'OFFER_SUCCESS';
