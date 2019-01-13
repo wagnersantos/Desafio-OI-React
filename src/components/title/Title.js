@@ -4,7 +4,7 @@ const Title = (props) => (
 	<div className="container-main--title">
 		<div className='grid'>
 			<h1>
-				<span>desafio </span>
+				<span>desafio&nbsp;</span>
 				<span>e-commerce</span>
 			</h1>
 		</div>

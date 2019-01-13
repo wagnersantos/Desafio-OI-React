@@ -107,6 +107,9 @@ img {
   margin-bottom: 10px; }
   .container-main--title span {
     display: block; }
+    @media (min-width: 1024px) {
+      .container-main--title span {
+        display: inline-block; } }
   @media (min-width: 1024px) {
     .container-main--title {
       margin-bottom: 65px; } }
@@ -121,7 +124,7 @@ img {
     .cards {
       padding-top: 65px; } }
   .cards__offer-title {
-    font-size: 24px;
+    font-size: 26px;
     font-family: 'Arial';
     color: #222;
     line-height: 1;
@@ -138,8 +141,11 @@ img {
   .cards .slick-slide {
     position: relative;
     margin: 0 8px;
-    margin-bottom: 20px;
-    padding-top: 4px; }
+    padding-top: 4px;
+    margin-bottom: 20px; }
+    @media (min-width: 1024px) {
+      .cards .slick-slide {
+        margin-bottom: 30px; } }
   .cards .slick-list {
     padding: 0 22px; }
     @media (min-width: 1024px) {
