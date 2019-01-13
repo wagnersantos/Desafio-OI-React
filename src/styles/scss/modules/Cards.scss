@@ -2,7 +2,7 @@
     width: 100%;
     margin: 0 auto;
 	text-align: center;
-	min-height: 300px;
+	min-height: 500px;
 	padding-top: 30px;
 	@media(min-width: 1024px){
 		padding-top: 65px;
@@ -244,7 +244,6 @@
     	img{
 			margin: 0 auto;
 			width: 100px;
-   	 		transform: translateY(50%);
     	}
     }
 }
