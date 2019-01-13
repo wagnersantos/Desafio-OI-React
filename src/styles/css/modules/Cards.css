@@ -73,7 +73,7 @@
     background-clip: text;
     margin-bottom: 4px; }
   .cards .underline {
-    border-bottom: 1px solid #8f8f8f; }
+    border-bottom: 1px solid 8f8f8f; }
   .cards__apps-list {
     min-height: 66px; }
     @media (min-width: 1024px) {
@@ -96,7 +96,7 @@
         border-radius: 6px;
         box-sizing: content-box;
         margin-right: 4px;
-        border: 1px solid #dbdbdb;
+        border: 1px solid #616161;
         background-size: cover;
         display: block; }
       .cards__apps-list__social-icons .icon-netflix span {
