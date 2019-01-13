@@ -14,15 +14,15 @@ class Cards extends Component {
     return (
       <div className="cards">
         <h2 className='cards__offer-title'>Todas as nossas ofertas:</h2>
-        {
-           error && <p className='cards__error'>Por favor recarregue a página novamente.</p>
-        }
-        {
-          fetching && <Loader />
-        }
-        {
-          arr.length !== 0 && !fetching && <CardsItem arr={arr.slice(0,8)} />  
-        }
+          {
+             error && <p className='cards__error'>Por favor recarregue a página novamente.</p>
+          }
+          {
+            fetching && <Loader />
+          }
+          {
+            arr.length !== 0 && !fetching && <CardsItem arr={arr.slice(0,8)} />  
+          }
 	    </div>
     )
   }
