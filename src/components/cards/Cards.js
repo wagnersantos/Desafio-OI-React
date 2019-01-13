@@ -15,7 +15,10 @@ class Cards extends Component {
       <div className="cards">
         <h2 className='cards__offer-title'>Todas as nossas ofertas:</h2>
           {
-             error && <p className='cards__error'>Por favor recarregue a página novamente.</p>
+             error && 
+               <p className='cards__error'>
+                  Ocorreu um erro ao carregar a página. Por favor tente novamente.
+               </p>
           }
           {
             fetching && <Loader />

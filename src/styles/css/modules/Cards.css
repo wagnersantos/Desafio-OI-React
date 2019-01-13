@@ -65,6 +65,13 @@
     font-family: 'Helvetica Neue,Helvetica,Arial,sans-serif';
     margin-bottom: 15px;
     color: #8f8f8f; }
+  .cards__error {
+    font-size: 16px;
+    padding: 0 30px;
+    color: #f25060; }
+    @media (min-width: 1024px) {
+      .cards__error {
+        font-size: 18px; } }
   .cards__internet {
     font-size: 40px;
     font-family: 'Arial';

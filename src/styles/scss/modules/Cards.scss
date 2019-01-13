@@ -91,6 +91,14 @@
     	margin-bottom: 15px;
     	color: #8f8f8f;
     }
+    &__error{
+		font-size: 16px;
+		padding: 0 30px;
+		color: #f25060;
+		@media(min-width: 1024px){
+			font-size: 18px;
+		}
+    }
     &__internet{
     	font-size: 40px;
     	font-family: 'Arial';
