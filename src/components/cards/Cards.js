@@ -42,7 +42,7 @@ Cards.propTypes = {
   error: PropTypes.bool.isRequired,
   fetching: PropTypes.bool.isRequired,
   arr: PropTypes.array.isRequired,
-  getOffer: PropTypes.func.isRequired,
+  getOffer: PropTypes.func,
 };
 
 export default connect (mapStateToProps)(Cards);
