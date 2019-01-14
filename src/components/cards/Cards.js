@@ -41,7 +41,7 @@ const mapStateToProps = store => ({
 Cards.propTypes = {
   error: PropTypes.bool.isRequired,
   fetching: PropTypes.bool.isRequired,
-  arr: PropTypes.object.isRequired,
+  arr: PropTypes.array.isRequired,
   getOffer: PropTypes.func.isRequired,
 };
 
