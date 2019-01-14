@@ -12,7 +12,7 @@ class Cards extends Component {
     const { arr, fetching, error } = this.props;
    
     return (
-      <div className="cards">
+      <div className='cards'>
         <h2 className='cards__offer-title'>Todas as nossas ofertas:</h2>
           {
              error && 
