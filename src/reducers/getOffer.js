@@ -3,7 +3,7 @@ import { OFFER_FETCHING, OFFER_ERROR, OFFER_SUCCESS } from '../actions/actions-t
 const initialState = {
   fetching : false,
   arr     : [],
-  error: null
+  error: false
 }
 
 export const getOffer = (state = initialState, action) => {
@@ -12,7 +12,7 @@ export const getOffer = (state = initialState, action) => {
       return {
         ...state,
         fetching: true,
-        error: null
+        error: false
       }
 
     case OFFER_SUCCESS:
