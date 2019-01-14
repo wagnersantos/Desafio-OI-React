@@ -13,10 +13,4 @@ const Select = (props) => (
 	</div>
 )
 
-const mapStateToProps = store => ({
-  arr: store.getOffer.arr,
-  fetching: store.getOffer.fetching,
-  error: store.getOffer.error
-});
-
-export default connect(mapStateToProps)(Select);
+export default connect()(Select);
