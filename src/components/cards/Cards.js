@@ -3,6 +3,7 @@ import { getOffer } from '../../actions';
 import { connect } from 'react-redux';
 import CardsItem from '../../components/cardsItem/CardsItem';
 import Loader from '../../components/images/loader/Loader';
+import PropTypes from 'prop-types';
 
 class Cards extends Component {
   componentDidMount() {
@@ -36,5 +37,12 @@ const mapStateToProps = store => ({
   fetching: store.getOffer.fetching,
   error: store.getOffer.error
 });
+
+Cards.propTypes = {
+  error: PropTypes.bool.isRequired,
+  fetching: PropTypes.bool.isRequired,
+  arr: PropTypes.object.isRequired,
+  getOffer: PropTypes.func.isRequired,
+};
 
 export default connect (mapStateToProps)(Cards);
