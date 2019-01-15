@@ -14,6 +14,7 @@
     @media (min-width: 1024px) {
       .container-menu--select select {
         font-size: 18px;
-        margin-left: 45px; } }
+        margin-left: 45px;
+        padding-right: 15px; } }
 
 /*# sourceMappingURL=Header.css.map */
