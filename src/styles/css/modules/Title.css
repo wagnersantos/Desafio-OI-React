@@ -1,0 +1,16 @@
+.container-main--title {
+  font-size: 28px;
+  font-family: 'Sans-serif';
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px; }
+  .container-main--title span {
+    display: block; }
+    @media (min-width: 1024px) {
+      .container-main--title span {
+        display: inline-block; } }
+  @media (min-width: 1024px) {
+    .container-main--title {
+      margin-bottom: 65px; } }
+
+/*# sourceMappingURL=Title.css.map */

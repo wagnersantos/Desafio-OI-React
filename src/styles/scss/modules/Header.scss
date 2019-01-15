@@ -1,0 +1,22 @@
+.container-menu{
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	justify-content: space-between;
+	@media(min-width: 1024px){
+		justify-content: start;
+	}
+	&--select{
+		select{
+			border: 0;
+			outline: none;
+			font-size: 14px;
+			@media(min-width: 1024px){
+				font-size: 18px;
+				margin-left: 45px;
+				padding-right: 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.container-footer{
+	padding: 2.5rem 0;
+	text-align: center;
+	p{
+		font-size: 14px;
+		font-family: 'Arial';
+		@media(min-width: 1024px){
+			font-size: 16px;
+		}
+	}
+}

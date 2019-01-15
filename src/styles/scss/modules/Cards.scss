@@ -1,0 +1,267 @@
+.cards{
+    width: 100%;
+    margin: 0 auto;
+	text-align: center;
+	min-height: 500px;
+	padding-top: 30px;
+	@media(min-width: 1024px){
+		padding-top: 65px;
+	}
+	&__offer-title{
+		font-size: 26px;
+		font-family: 'Arial';
+		color: #222;
+		line-height: 1;
+		margin-bottom: 40px;
+	}
+	&__item{
+        width:100%;
+        max-width: 280px;
+		margin: 0 auto;
+		text-align: center;
+	    box-sizing: border-box;
+	}
+	.slick-slider {
+        display: block;
+        width: 100%;
+	   
+	}
+	.slick-slide{
+		position: relative;
+		margin: 0 8px;
+		padding-top: 4px;
+		margin-bottom: 20px;
+		@media(min-width: 1024px){
+			margin-bottom: 30px;
+		}
+	}
+	.slick-list{
+		padding: 0 22px;
+		@media(min-width: 1024px){
+			padding:0 30px;
+		}
+		@media(min-width: 1250px){
+			padding:0 50px;
+		} 
+	}
+	.slick-list:focus {
+	    outline: none;
+	}
+	.slick-dots{
+		left: 0;
+		font-size: 18px;
+		li{
+			button{
+				&:before{
+					font-size: 6px;
+					border: 0;
+					color: #616161;
+				}
+				&:hover{
+					@at-root{
+						&:before{
+							color: #d4d4d4;
+						}
+					}
+				}
+			}
+			&.slick-active{
+				button{
+					&::before{
+						font-size: 8px;
+						color :  #e40f4b;
+					}
+				}
+			}
+		}
+
+	}
+	&__wrapper {
+        position: relative;
+        padding: 20px 35px 35px 40px;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: -4px 8px 24px 0 rgba(2, 2, 2, 0.15);
+        text-align: center;
+        min-width: 260px;
+    }
+    &__title{
+    	font-size: 14px;
+    	font-family: 'Helvetica Neue,Helvetica,Arial,sans-serif';
+    	margin-bottom: 15px;
+    	color: #8f8f8f;
+    }
+    &__error{
+		font-size: 16px;
+		padding: 0 30px;
+		color: #f25060;
+		@media(min-width: 1024px){
+			font-size: 18px;
+		}
+    }
+    &__internet{
+    	font-size: 40px;
+    	font-family: 'Arial';
+    	background-image: linear-gradient(287deg, #fe6b03, #e40f4b);
+    	-webkit-text-fill-color: transparent;
+    	background-clip: text;
+    	margin-bottom: 4px;
+    }
+    .underline{
+		border-bottom: 1px solid 8f8f8f;
+	}
+    &__apps-list{ 
+    	min-height: 66px;
+    	@media(min-width: 1024px){
+  		    margin: 18px 0 10px 0;
+    	}
+    	&__title{
+    		margin-bottom: 7px;
+    		font-size: 14px;
+    		@media(min-width: 1024px){
+    			font-size: 16px;
+    		}
+    	}
+    	&__social-icons{
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		li{
+    			span{
+				    width: 24px;
+				    height: 23px;
+    				background: url("../../assets/images/icons/sprite-social-icons.png") no-repeat 0 0;
+    				border-radius: 6px;
+    				box-sizing: content-box;
+    				margin-right: 4px;
+    				border: 1px solid #dbdbdb;
+    				background-size: cover;
+					display: block;
+    			}
+    		}
+    		.icon{
+    			&-netflix{
+					span{
+						background-position: 0;
+					}
+				}
+				&-youtube{
+					span{
+						background-position: -31px 0;
+					}
+				}
+				&-facebook{
+					span{
+						background-position: -61px 0;
+					}
+				}
+				&-mensseger{
+					span{
+						background-position: -92px 0;
+					}
+				}
+				&-instagram{
+					span{
+						background-position: -123.5px 0;
+					}
+				}
+				&-whatsapp{
+					span{
+						background-position: -154px 0;
+					}
+				}
+			} 
+    	}
+    }
+     &__video-list{
+    	min-height: 66px;
+    	&__logos{
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		img{
+    			height: 40px;
+    			margin-right: 4px;
+    			border-radius: 4px;
+    		}
+    		span{
+    			height: 40px;
+    		}
+    	}
+    	&__title{
+    		font-size: 14px;
+    		@media(min-width: 1024px){
+    			font-size: 16px;
+    		}
+    	}
+    }
+    &__dependents{
+    	margin-bottom: 20px;
+    	&-title{
+    		font-size: 14px;
+    		line-height: 1;
+    		font-family: 'Arial';
+    		font-weight: bold;
+    		margin-bottom: 4px;
+    		@media(min-width: 1024px){
+    			font-size: 16px;
+    		}
+    	}
+    	&-price{
+    		font-size: 12px;
+    		color: #777;
+    	}
+    }
+    &__block-price{
+		&__value{
+			font-size: 32px;
+			font-weight: bold;
+			font-family: 'Arial';
+			@media(min-width: 1024px){
+    			font-size: 36px;
+    		}
+		}
+		&__prefix{
+			margin-right: 4px;
+			font-size: 16px;
+			position: relative;
+			@media(min-width: 1024px){
+    			font-size: 18px;
+    		}			
+		}
+		&__sufix{
+			font-size: 15px;
+			display: inline-flex;
+			flex-direction: column;
+			position: relative;
+			bottom: 14px;
+			margin-left: 4px;
+			@media(min-width: 1024px){
+				font-size: 16px;
+    			bottom: 16px;
+    		}
+		}
+    }
+    &__button{
+    	border-radius: 2px;
+        color: #222;
+        background-color: #ffd700;
+        font-family: 'Arial';
+        font-size: 16px;
+        line-height: 1;
+        font-weight: bold;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 16px 40px;
+        &:hover{
+        	background-color: #ffe83d;
+        }
+    }
+    &__loader{
+    	img{
+			margin: 0 auto;
+			width: 100px;
+    	}
+    }
+}

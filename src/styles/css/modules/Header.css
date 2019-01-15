@@ -1,0 +1,20 @@
+.container-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  justify-content: space-between; }
+  @media (min-width: 1024px) {
+    .container-menu {
+      justify-content: start; } }
+  .container-menu--select select {
+    border: 0;
+    outline: none;
+    font-size: 14px; }
+    @media (min-width: 1024px) {
+      .container-menu--select select {
+        font-size: 18px;
+        margin-left: 45px;
+        padding-right: 15px; } }
+
+/*# sourceMappingURL=Header.css.map */
