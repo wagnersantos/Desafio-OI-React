@@ -23,7 +23,7 @@ O desafio consiste em desenvolver uma aplicação que cumpra os requisitos lista
 	- Fetch-mock
 
 ###  Build/Run
-- Instalando package
+- Instalando dependências
 `npm install ou yarn install`
 - Rodar o projeto
 `npm start ou yarn start`
