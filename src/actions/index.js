@@ -5,9 +5,6 @@ export const getOffer = (param = '') => (
     dispatch(fetchOfferBegin())
     return ( 
       fetch(`https://cors-anywhere.herokuapp.com/https://desafio-oi.herokuapp.com/${param}`)
-        .then(response =>
-          (!response.ok) ? console.log(response.statusText) : response
-        )
         .then(response => response.json())
         .then(json => {
           dispatch(fetchOfferSuccess(json))
