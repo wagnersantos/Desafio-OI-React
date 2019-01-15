@@ -28,4 +28,4 @@ O desafio consiste em desenvolver uma aplicação que cumpra os requisitos lista
 - Rodar o projeto
 `npm start ou yarn start`
 - Rodar os testes
-`npm run tests ou yarn run tests`
+`npm run test ou yarn run test`
