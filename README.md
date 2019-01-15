@@ -9,6 +9,8 @@ O desafio consiste em desenvolver uma aplicação que cumpra os requisitos lista
 5.  Componente de seleção de cidade deve conter as seguintes opções: Todos, Rio de Janeiro e São Paulo
 6.  O módulo de card de ofertas deve exibir ofertas de acordo com a cidade selecionada.
 
+### Live Demo
+- https://desafio-oi.netlify.com
 ### Stack
  - React
 	 - Redux
@@ -20,7 +22,7 @@ O desafio consiste em desenvolver uma aplicação que cumpra os requisitos lista
 	- Enzyme
 	- Fetch-mock
 
-### Instalação / Run
+###  Build/Run
 - Instalando package
 `npm install ou yarn install`
 - Rodar o projeto
